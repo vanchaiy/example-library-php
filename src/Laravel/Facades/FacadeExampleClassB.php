@@ -8,6 +8,6 @@ class FacadeExampleClassB extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'example_class_b'; // same as bind method in service provider
+        return 'facadeexampleclassb'; // same as bind method in service provider
     }
 }
