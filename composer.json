@@ -16,8 +16,8 @@
     "extra": {
         "laravel": {
             "aliases": {
-                "ClassA": "ExampleLibrary\\Laravel\\Facades\\FacadeExampleClassA",
-                "ClassB": "ExampleLibrary\\Laravel\\Facades\\FacadeExampleClassB"
+                "ClassA": "ExampleLibrary\\Laravel\\Facades\\ExampleClassA",
+                "ClassB": "ExampleLibrary\\Laravel\\Facades\\ExampleClassB"
             },
             "providers": [
                 "ExampleLibrary\\Laravel\\LaravelServiceProvider"
