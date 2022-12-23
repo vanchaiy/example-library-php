@@ -3,7 +3,7 @@
 namespace ExampleLibrary;
 
 
-class ClassB
+class ExampleClassB
 {
     public function hello()
     {
