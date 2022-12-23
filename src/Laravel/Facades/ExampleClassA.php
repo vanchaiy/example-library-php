@@ -4,7 +4,7 @@ namespace ExampleLibrary\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class FacadeExampleClassA extends Facade
+class ExampleClassA extends Facade
 {
     protected static function getFacadeAccessor()
     {
