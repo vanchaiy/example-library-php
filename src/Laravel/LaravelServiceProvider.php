@@ -15,14 +15,14 @@ class LaravelServiceProvider extends ServiceProvider
     
     public function register()
     {
-        $this->app->bind('example_class_a', function () {
+        $this->app->bind('facadeexampleclassa', function () {
             $exampleA = config('example.exampleA');
             return new ExampleClassA([
                 "exampleA" => $exampleA,
             ]);
         });
 
-        $this->app->bind('example_class_b', function () {
+        $this->app->bind('facadeexampleclassb', function () {
             $exampleB = config('example.exampleB');
             return new ExampleClassA([
                 "exampleA" => $exampleB,
