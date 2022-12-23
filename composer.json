@@ -1,0 +1,27 @@
+{
+    "name": "vanchaiy/example-library-php",
+    "description": "Library Example",
+    "keywords": ["Library" , "Example"],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/vanchaiy/example-library-php.git",
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExampleLibrary\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "ClassA": "ExampleLibrary\\Laravel\\Facades\\ClassA",
+                "ClassB": "ExampleLibrary\\Laravel\\Facades\\ClassB"
+            },
+            "providers": [
+                "ExampleLibrary\\Laravel\\LaravelServiceProvider"
+            ]
+        }
+    }
+}
