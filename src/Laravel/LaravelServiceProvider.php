@@ -24,7 +24,7 @@ class LaravelServiceProvider extends ServiceProvider
 
         $this->app->bind('facadeexampleclassb', function () {
             $exampleB = config('example.exampleB');
-            return new ExampleClassA([
+            return new ExampleClassB([
                 "exampleA" => $exampleB,
             ]);
         });
