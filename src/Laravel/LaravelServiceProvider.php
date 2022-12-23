@@ -3,8 +3,8 @@
 namespace ExampleLibrary\Laravel;
 
 use Illuminate\Support\ServiceProvider;
-use ExampleLibrary\ExampleClassA;
-use ExampleLibrary\ExampleClassB;
+use ExampleLibrary\ClassA;
+use ExampleLibrary\ClassB;
 
 class LaravelServiceProvider extends ServiceProvider
 {
@@ -17,14 +17,14 @@ class LaravelServiceProvider extends ServiceProvider
     {
         $this->app->bind('ExampleClassA', function () {
             $exampleA = config('example.exampleA');
-            return new ExampleClassA([
+            return new ClassA([
                 "exampleA" => $exampleA,
             ]);
         });
 
         $this->app->bind('ExampleClassB', function () {
             $exampleB = config('example.exampleB');
-            return new ExampleClassB([
+            return new ClassB([
                 "exampleA" => $exampleB,
             ]);
         });
